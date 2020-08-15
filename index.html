@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <meta name="Author" content="Yoengmin" />
+  <meta name="Description" content="Portfolio" />
+  <script src="pf.js" defer></script>
+  <link rel="icon" type="png" href="./imgs/favicon2.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="pf.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+
+  <nav id="navbar">
+    <div class="navbar__logo">
+      <i class="fas fa-signal" id="open" onclick="make()"></i>
+    </div>
+  </nav>
+  <!-- Home -->
+
+  <section id="home">
+    <div class="home__left">
+      <ul class="home__menu">
+        <li class="home__items" id="unmake" onclick="unmake()">&#215;</li>
+        <li class="home__items" data-link="#home">Home</li>
+        <li class="home__items" data-link="#skill">Skill</li>
+        <li class="home__items" data-link="#major">My Project</li>
+        <li class="home__items" data-link="#contact">Contact</li>
+      </ul>
+
+      <div class="home__title">
+        <h1>Contact me</h1>
+        <p>
+          멋진 개발자가 되기위해<br />지금도 계속 <b>나아가고 있습니다. </b>
+        </p>
+      </div>
+    </div>
+
+    <div class="home__right"></div>
+  </section>
+
+  <!-- Skill -->
+  <section id="skill">
+    <div class="skill__container">
+      <div class="skill__devision">
+        <div class="skill__left">
+          <h2>Front-end</h2>
+          <p>
+            저는 UI와 UX의 관한 시각적인 공부를하면서 웹,앱의 비지니스
+            로직코딩을 작성하고 유닛테스트를 진행합니다. 사용자와 유저플로우
+            상호작용에 관련된일 일을 공부하고 이외에 라이브러리나 워크프레임에
+            Typescript와 css전처리기에 less sass post sc 를 공부하고 vue
+            reacte 등의 공부를 하며 이것들의 본래 용도가 무엇인지 생각하며
+            효율적이게 사용하려고 노력하고있습니다.
+          </p>
+        </div>
+        <div class="skill__right">
+          <img src="./imgs/YoutubeClone.png" alt="" />
+
+          <div class="skill__hover">
+            <a href="">
+              <h2>Youtube</h2>
+              <p>CloneCoding</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill__devision">
+        <div class="skill__left">
+          <h2>Back-end</h2>
+          <p>
+            제품의 비지니스로직만 신경쓰려면 백엔드 확장성 안정성 더중점
+            서비스의 인터페이스 API구현 데이터 저장소설계 DB나 Blob sorage 3자
+            서비스 톹ㅇ합 로그합게 데이터분석 사이트모니터링
+            인프라관련된일이나 데브옵스나 SRE 팀 js , node js , go python
+            network HTTP,TCP/IPP DNS 동작이랑 소켓도 REST , REST 디자인 데이터
+            저장소 DB랑 SQL 관계형 데이트 베이스 ACID 키,인덱스SQL, noSQL
+            caching Redis memcahhin authentication 분산형 시스템 CAP theorem
+            BASE
+          </p>
+        </div>
+        <div class="skill__right">
+          <img src="./imgs/My_Logo.png" alt="" />
+          <div class="skill__hover">
+            <a href="">
+              <h2>Youtube</h2>
+              <p>CloneCoding</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill__devision">
+        <div class="skill__left">
+          <h2>앱개발</h2>
+          <p>준비중 입니다.</p>
+        </div>
+        <div class="skill__right">
+          <img src="./imgs/LogoReverse.png" alt="" />
+          <div class="skill__hover">
+            <a href="">
+              <h2>Youtube</h2>
+              <p>CloneCoding</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Major -->
+  <section id="major">
+    <div class="major__container">
+      <h1>제가 노력하고 이루어온 아이들 입니다.</h1>
+
+      <div class="major__description">
+        <img src="./imgs/YoutubeClone.png" alt="YouTubeCloneCoding" />
+        <img src="./imgs/YoutubeClone.png" alt="Back-end image" />
+        <img src="./imgs/YoutubeClone.png" alt="Android make App" />
+      </div>
+
+      <div class="major__description">
+        <img src="./imgs/YoutubeClone.png" alt="YouTubeCloneCoding" />
+        <img src="./imgs/YoutubeClone.png" alt="Android make App" />
+        <img src="./imgs/YoutubeClone.png" alt="Android make App" />
+      </div>
+
+      <div class="major__description">
+        <img src="./imgs/YoutubeClone.png" alt="YouTubeCloneCoding" " />
+          <img src=" ./imgs/YoutubeClone.png" alt="Back-end image" />
+        <img src="./imgs/YoutubeClone.png" alt="Android make App" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+
+  <section id="contact">
+    <h2><a href="">parametertree@gamil.com</a></h2>
+    <a href=""> <i class="fas fa-cube"></i></a>
+    <a href=""><i class="fab fa-github"></i></a>
+  </section>
+</body>
+
+</html>
