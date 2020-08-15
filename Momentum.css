@@ -56,3 +56,9 @@ body {
     z-index: -1;
     animation: fadeIn 300ms linear;
 }
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 20px;
+    }
+}
