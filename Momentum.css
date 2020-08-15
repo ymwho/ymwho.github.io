@@ -1,58 +1,58 @@
 body {
-  background-color: #acc4de;
+    background-color: #ACC4DE;
 }
 
 .title,
 .painting.showing,
 .nameForm {
-  text-align: center;
-  font-size: 40px;
-  color: white;
-  display: flex;
-  flex-direction: column;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .nameForm input {
-  width: 300px;
-  height: 30px;
-  border: none;
-  outline: none;
-  border: 1px solid white;
+    width: 300px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border: 1px solid white;
 }
+
 
 .nameForm,
 .painting {
-  display: none;
+    display: none;
 }
 
 .painting.showing,
 .nameForm.showing {
-  display: block;
+    display: block;
+
 }
+
 
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+    from {
+        opacity: 0;
+    }
 
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
+
+
 }
 
 .image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  animation: fadeIn 300ms linear;
-}
-
-@media screen and (max-width: 768px) {
-  .title {
-    font-size: 20px;
-  }
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: fadeIn 300ms linear;
 }
