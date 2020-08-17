@@ -1,8 +1,5 @@
 "use strict";
 
-$(document).ready(function () {
-    $(this).scrollTop(0);
-});
 
 const profileBox = document.querySelector('.profile__box');
 const profile = document.querySelector('#profile');
