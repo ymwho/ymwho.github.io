@@ -2,27 +2,124 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="Momentum.css">
-  <script src="clock.js" defer></script>
-  <script src="nameForm.js" defer></script>
-  <script src="back.js" defer></script>
-  <script src="weather.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="menuToggle.js" defer></script>
+    <script src="menuScroll.js" defer></script>
+    <script src="profileFade.js" defer></script>
 </head>
 
+
+
 <body>
-  <div class="title">
-    <h1>00:00</h1>
-  </div>
 
-  <form class="nameForm">
-    <input type="text" placeholder="What is your name?" />
-  </form>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="menuIcon"><i class="fas fa-bars"></i></div>
+        <ul class="navbar__menu">
+            <li class="navbar__items action"><i class="fab fa-react"></i></li>
+            <li class="navbar__items" data-link="#home">Home</li>
+            <li class="navbar__items" data-link="#profile">Frofile</li>
+            <li class="navbar__items" data-link="#project">Project</li>
+            <li class="navbar__items" data-link="#contact">Contact</li>
+        </ul>
+    </nav>
 
-  <h2 class="painting"></h2>
 
+
+    <!-- Home -->
+    <section id="home">
+
+        <video autoplay loop="" src="http://127.0.0.1:5500/images/video4.mp4" alt="4Kwall"></video>
+
+
+    </section>
+
+    <!-- Teamprofile -->
+    <section id="profile">
+        <div class="profile__box">
+            <div class="profile__container">
+                <div class="profile__info">
+                    <h1>Front-end</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto fuga iure aspernatur adipisci
+                        nobis
+                        nihil expedita dignissimos,
+                        </br>eveniet dolores nam cupiditate, aperiam asperiores. Temporibus omnis nam, libero aut
+                        delectus
+                        neque.</p>
+                </div>
+
+
+                <div class="profile__image">
+                    <img src="./images/jobs.jpg" alt="JungHan">
+
+                </div>
+
+            </div>
+
+            <div class="profile__container">
+
+
+                <div class="profile__info">
+                    <h1>Back-end</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto fuga iure aspernatur adipisci
+                        nobis
+                        nihil expedita dignissimos,
+                        </br>eveniet dolores nam cupiditate, aperiam asperiores. Temporibus omnis nam, libero aut
+                        delectus
+                        neque.</p>
+                </div>
+
+                <div class="profile__image">
+                    <img src="./images/jobs.jpg" alt="JungHan">
+
+                </div>
+
+            </div>
+
+
+            <div class="profile__container">
+
+
+                <div class="profile__info">
+                    <h1>Devops</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto fuga iure aspernatur adipisci
+                        nobis
+                        nihil expedita dignissimos,
+                        </br>eveniet dolores nam cupiditate, aperiam asperiores. Temporibus omnis nam, libero aut
+                        delectus
+                        neque.</p>
+                </div>
+
+                <div class="profile__image">
+                    <img src="./images/jobs.jpg" alt="JungHan">
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Project -->
+
+    <section id="project">
+
+
+
+
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+
+
+    </section>
 </body>
 
 </html>
