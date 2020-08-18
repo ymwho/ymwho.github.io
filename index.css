@@ -58,15 +58,13 @@ a {
 /* Profile */
 
 #profile {
-    background-color: #DFFEFC;
+    background-color: #f5f1efad;
 }
 
 
 
 .profile__box {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    width: 1000px;
+    width: 1150px;
     margin: auto;
     visibility: hidden;
 }
@@ -80,8 +78,7 @@ a {
 
 .profile__container {
     display: flex;
-    padding: 70px;
-
+    padding-top:70px
 
 }
 
@@ -91,8 +88,8 @@ a {
 }
 
 .profile__image img {
-    width: 300px;
-    height: 200px;
+    width: 70%;
+    height: 70%;
     float: right;
 
 }
@@ -116,7 +113,7 @@ a {
 /* Project*/
 
 #project {
-    background-color: #F5F1EF;
+    background-color: #f5f1efad;
     height: 600px;
     color: orange;
 }
@@ -186,6 +183,7 @@ a {
 
     #profile {
         width: 100%;
+       
     }
 
 
@@ -195,13 +193,12 @@ a {
         height: auto;
     }
 
-
-
-
     .profile__container {
         flex-direction: column;
         text-align: center;
         padding: 20px 50px;
+        align-items: center;
+
     }
 
     .profile__info h1 {
@@ -213,17 +210,17 @@ a {
 
     }
 
-    .profile__image img {
-        float: left;
-        padding: 30px 60px;
-
+    .profile__image {
+        width:  80%;
+        height: 80%;
+        margin: 40px 0px;
     }
+
 
     /* Description*/
 
     .description {
         font-size: 16px;
-        margin: auto;
     }
 
 }
