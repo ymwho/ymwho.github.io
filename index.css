@@ -52,6 +52,7 @@ a {
 #home video {
     width: 100%;
     height: 1050px;
+    margin: auto;
 }
 
 /* Profile */
