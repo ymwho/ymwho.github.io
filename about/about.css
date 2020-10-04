@@ -118,25 +118,6 @@ a {
   animation: bar 5000ms ease-in-out;
   animation-iteration-count: infinite;
 }
-.about h1 {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  color: white;
-  z-index: 1;
-  font-size: 38px;
-  font-weight: bold;
-}
-.about p {
-  position: absolute;
-  top: 34%;
-  left: 25%;
-  color: white;
-  z-index: 1;
-  font-size: 26px;
-  font-weight: bold;
-}
-
 .down__btn {
   position: absolute;
   bottom: 10%;
@@ -145,6 +126,25 @@ a {
   z-index: 1;
   cursor: pointer;
   font-size: 20px;
+}
+
+.site__title h1 {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  color: white;
+  z-index: 1;
+  font-size: 38px;
+  font-weight: bold;
+}
+.site__title p {
+  position: absolute;
+  top: 34%;
+  left: 25%;
+  color: white;
+  z-index: 1;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 /*  About Description*/
@@ -159,6 +159,7 @@ a {
   display: flex;
   padding: 50px;
   padding-bottom: 73px;
+  flex-wrap: wrap;
 }
 
 .about__description img {
@@ -207,5 +208,51 @@ a {
   }
   100% {
     width: 250px;
+  }
+}
+
+/* Media screen */
+
+@media screen and (max-width: 768px) {
+  /* Category */
+  .category {
+    top: 6%;
+    left: 6%;
+  }
+  .category c {
+    font-size: 16px;
+  }
+  /* Category Click */
+
+  .click {
+    flex-basis: 35%;
+  }
+
+  .category c,
+  .category p {
+    font-size: 16px;
+  }
+  .click h2,
+  .cancle {
+    font-size: 12px;
+  }
+
+  /* Carousel */
+  .site__title h1 {
+    font-size: 24px;
+  }
+  .site__title p {
+    font-size: 16px;
+  }
+  /* About Description */
+
+  .about__description img {
+    width: 300px;
+    height: 300px;
+    padding-bottom: 40px;
+  }
+  .about__info {
+    flex-basis: 100%;
+    text-align: center;
   }
 }
