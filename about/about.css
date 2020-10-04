@@ -1,13 +1,80 @@
+/* Root */
+
 * {
   margin: 0px;
   padding: 0px;
   font-family: 'Noto Sans KR', sans-serif;
 }
+
 h1 {
-  font-size: 22px;
+  font-size: 24px;
 }
-p {
-  font-size: 16px;
+a {
+  text-decoration: none;
+}
+
+/* Category */
+.category {
+  align-items: center;
+  position: absolute;
+  top: 138px;
+  left: 140px;
+  z-index: 2;
+  color: white;
+}
+.category c {
+  margin: 0px 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Category Click  */
+
+.category__click {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  top: 0px;
+  right: 2000px;
+  visibility: hidden;
+}
+
+.cancle {
+  font-size: 20px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.click {
+  flex-basis: 20%;
+  background-color: white;
+  line-height: 52px;
+  padding-top: 10%;
+  text-align: center;
+}
+.click h2 a {
+  color: black;
+}
+
+.click p {
+  color: #999799;
+}
+
+.white__space {
+  flex-basis: 80%;
+  background-color: black;
+  opacity: 0.8;
+}
+/* CategoryShow */
+.show {
+  transition: all 500ms ease-in-out;
+  animation: fade 500ms linear;
+  visibility: visible;
+  right: 0px;
 }
 
 /* Carousel */
@@ -86,6 +153,7 @@ p {
   padding-top: 85px;
   line-height: 20px;
   background-color: #f3f3f3;
+  padding-bottom: 60px;
 }
 .about__description {
   display: flex;
@@ -110,6 +178,17 @@ p {
 }
 .about__info h1 {
   padding-bottom: 20px;
+}
+
+/* Footer */
+#footer {
+  height: 250px;
+  background-color: grey;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 /* KeyFrames */

@@ -477,9 +477,17 @@ a {
 
   /* Category Click */
 
+  .click {
+    flex-basis: 35%;
+  }
+
   .category c,
   .category p {
     font-size: 16px;
+  }
+  .click h2,
+  .cancle {
+    font-size: 12px;
   }
 
   .category {
@@ -489,16 +497,7 @@ a {
     left: 30px;
     top: 30px;
   }
-  /* Category Click */
 
-  .click {
-    flex-basis: 35%;
-  }
-
-  .click h2,
-  .cancle {
-    font-size: 12px;
-  }
   /* vertical Bar */
 
   .bar__container {
