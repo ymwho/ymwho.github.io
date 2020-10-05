@@ -165,7 +165,6 @@ a {
 .about__description img {
   width: 400px;
   height: 450px;
-  padding: 0px 50px;
 }
 
 .about__image {
@@ -176,6 +175,7 @@ a {
   flex-basis: 30%;
   line-height: 30px;
   color: #393333;
+  padding-left: 50px;
 }
 .about__info h1 {
   padding-bottom: 20px;
@@ -254,5 +254,6 @@ a {
   .about__info {
     flex-basis: 100%;
     text-align: center;
+    padding-left: 0px;
   }
 }
