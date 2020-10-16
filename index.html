@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <meta name="description" content="Front-end Portfolio" />
     <meta name="Author" content="yeongmin" />
     <link rel="icon" type="image/png" href="image/idPhoto.jpg">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="./index.css">
 
 
 </head>
@@ -22,45 +20,72 @@
 
     <!-- Gnb -->
 
- <div id="gnb"> 
+    <div id="gnb">
 
-    <div class="mainLogo">
-        <h1>Yeongmin</h1>
+        <div class="mainLogo">
+            <h1>Yeongmin</h1>
+        </div>
+
+        <ul class="gnb__list">
+            <li class="gnb__component">Home</li>
+            <li class="gnb__component">About</li>
+            <li class="gnb__component">Skill</li>
+            <li class="gnb__component">Testimonial</li>
+        </ul>
+
+        <div class="tools">
+            <a href=""><i class="fab fa-git-square"></i></a>
+            <a href="https://www.notion.so/my-Achievements-a37d7694a23c4f25bee25492aba55452"><i class="fas fa-share-alt-square" alt ="Notion"></i></a>
+        </div>
+
     </div>
-
-    <ul class="gnb__list">
-        <li class="gnb__component">Home</li>
-        <li class="gnb__component">About</li>
-        <li class="gnb__component">Skill</li>
-        <li class="gnb__component">Testimonial</li>
-    </ul>
-
-    <div class="tools">
-        <i class="fab fa-git-square"></i>
-        <i class="fas fa-share-alt-square"></i>
-    </div>
-
-</div>
 
     <!-- Time Banner -->
 
     <div id="time__banner">
         <div class="time__image">
-            <img src="/image/timeBanner.png" alt="time__banner">
             <div class="time__description">
-                <h1>Et reprehenderit ad commodo<br/> qui occaecat</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Similique  dignis Ad voluptate amet  <br/>do labore do sunt voluptate consectetur fugiat.</p>
-                <h6>About me</h6>
+                <h1>신입 프론트엔드 개발자 박영민 입니다</h1>
+                <p>무엇이든 포기하지 않으면 반드시 할 수있다고 <br />생각 합니다</p>
             </div>
-        </div>       
-       
+        </div>
+
     </div>
 
     <!-- About Me -->
 
-    <!-- Our Service -->
+    <div id="about__me">
+        <div class="aboutImage">
+            <img src="/image/ddd.png" alt="idPhoto">
+            <div class="certificates">
+                <img src="/image/idPhoto.png" alt="temp">
+            </div>
+        </div>
 
-  
+        <div class="about__description">
+            <span class="about__nameLeft">About</span>
+            <span class="about__nameRight">Me</span>
+            <ul class = "about__list">
+                <li>- 19.01.15 2사단 군대 전역</li>
+                <li>- 20.05.06 대구 경북산업직업전문학교 교육 과정 참여 &&    인강 , 책으로 독학 </li>
+                <li>- 20.10.07 Hessdalen 가구 웹사이트 팀 프로젝트 시작</li>
+            </ul>
+            <div class="show__project">Show my Project</div>
+        </div>
+    </div>
+
+    <!--  Skill -->
+    <div id="skill">
+        <div class="skill__name">
+            <h1>Skill</h1>
+            <p>Lorem ipsum dolor sittationem eos tenetr sittationem eos tenetr sittationem eos tenetur autem fugit nemo.</p>
+        </div>
+
+
+
+
+    </div>
+
 </body>
 
 </html>
