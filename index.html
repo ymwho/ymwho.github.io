@@ -6,85 +6,273 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
     <meta name="description" content="Front-end Portfolio" />
     <meta name="Author" content="yeongmin" />
-    <link rel="icon" type="image/png" href="image/idPhoto.jpg">
-    <link rel="stylesheet" href="./index.css">
-
-
+    <link rel="stylesheet" href="index.css">
+    <script src="/js/gnbScroll.js" defer></script>
+    <script src="/js/gnbConvert.js" defer></script>
+    <script src="/js/skillSelect.js" defer></script>
+    <script src="/js/responsiveCategory.js" defer></script>
 </head>
 
 <body>
-
     <!-- Gnb -->
-
     <div id="gnb">
-
-        <div class="mainLogo">
+        <div class="gnb__logo">
             <h1>Yeongmin</h1>
         </div>
 
-        <ul class="gnb__list">
-            <li class="gnb__component">Home</li>
-            <li class="gnb__component">About</li>
-            <li class="gnb__component">Skill</li>
-            <li class="gnb__component">Testimonial</li>
+        <ul class="gnb__menu">
+            <li class="gnb__list" data-link="#about">ABOUT</li>
+            <li class="gnb__list" data-link="#skill">SKILL</li>
+            <li class="gnb__list" data-link="#project">PROJECT</li>
+            <li class="gnb__list" data-link="#contact">CONTACT</li>
         </ul>
 
-        <div class="tools">
-            <a href=""><i class="fab fa-git-square"></i></a>
-            <a href="https://www.notion.so/my-Achievements-a37d7694a23c4f25bee25492aba55452"><i class="fas fa-share-alt-square" alt ="Notion"></i></a>
+        <div class="catagory__btn">
+            <i class="fas fa-bars"></i>
         </div>
-
+    
     </div>
+
+
 
     <!-- Time Banner -->
 
+
     <div id="time__banner">
-        <div class="time__image">
-            <div class="time__description">
-                <h1>신입 프론트엔드 개발자 박영민 입니다</h1>
-                <p>무엇이든 포기하지 않으면 반드시 할 수있다고 <br />생각 합니다</p>
-            </div>
+        <div class="banner__container">
         </div>
-
+        <div class="banner__image">
+            <img src="/image/timeBanner.jpg" alt="timeBanner">
+        </div>
     </div>
 
-    <!-- About Me -->
+    <div class="banner__description">
+        <h1>신입 프론트엔드 개발자 박영민 입니다</h1>
+        <p>무엇이든 포기하지 않으면 반드시 할 수있다고 <br />생각 합니다</p>
+    </div>
+    <div id="vertical__bar">
+        <div class="top__bar"></div>
+    </div>
+    <div id="vertical__bar">
+        <div class="bottom__bar"></div>
+    </div>
+    </div>
 
-    <div id="about__me">
-        <div class="aboutImage">
-            <img src="/image/ddd.png" alt="idPhoto">
-            <div class="certificates">
-                <img src="/image/idPhoto.png" alt="temp">
-            </div>
-        </div>
+    <!-- About -->
 
+    <div id="about">
         <div class="about__description">
-            <span class="about__nameLeft">About</span>
-            <span class="about__nameRight">Me</span>
-            <ul class = "about__list">
-                <li>- 19.01.15 2사단 군대 전역</li>
-                <li>- 20.05.06 대구 경북산업직업전문학교 교육 과정 참여 &&    인강 , 책으로 독학 </li>
-                <li>- 20.10.07 Hessdalen 가구 웹사이트 팀 프로젝트 시작</li>
+            <h2>About</h2>
+            <ul>
+                <li>- 19.01.15 군대 전역</li>
+                <li>- 20.05.06 대구 경북산업직업전문학교 Java 웹 앱 교육 6개월 과정 참여 </li>
+                <li>- 20.10.07 교육과정 중 <b><a href="">HESSDALEN</a> </b>가구 웹사이트 팀 프론트엔드로 참여</li>
+                <li>
+                    <p>
+                        UX,UI적 요소로 가독성이 좋고 보기도 좋은 웹사이트를 디자인하고
+                        불필요하거나 중복되는 코드를 줄이고
+                        협업 시에 누군가 보더라도 이해하기 쉬운 로직 및 변수명을 잘 쓰는 프론트엔드가 되고 싶습니다
+                    </p>
+                </li>
             </ul>
-            <div class="show__project">Show my Project</div>
+            <div class="information__icon">
+                <a href="https://github.com/"><i class="fab fa-git-square"></i></a>
+                <a href="https://www.notion.so/my-Achievements-a37d7694a23c4f25bee25492aba55452"><i
+                        class="fab fa-git-alt"></i></a>
+            </div>
+
+        </div>
+
+        <div class="about__img">
+            <img src="/image/idPhoto.png" alt="idPhoto">
         </div>
     </div>
 
-    <!--  Skill -->
+    <!-- SKILL -->
+
     <div id="skill">
-        <div class="skill__name">
-            <h1>Skill</h1>
-            <p>Lorem ipsum dolor sittationem eos tenetr sittationem eos tenetr sittationem eos tenetur autem fugit nemo.</p>
+        <div class="skill__container">
+        </div>
+        <div class="skill__banner">
+        </div>
+        <div class="skill__title">
+            <h2>Skill</h2>
+        </div>
+
+        <div class="skill__selectview">
+            <div class="skill__bar">
+                <div class="skill__component">
+                    <div class="skill__name">
+                        <span>Front-end</span>
+                    </div>
+                    <div class="skill__number">
+                        <span>86%</span>
+                    </div>
+                </div>
+                <div class="skill__persentage">
+                    <div class="skill__persentagebar" style="width : 99%">
+                    </div>
+                </div>
+
+
+                <div class="skill__component">
+                    <div class="skill__name">
+                        <span>Back-end</span>
+                    </div>
+                    <div class="skill__number">
+                        <span>45%</span>
+                    </div>
+                </div>
+                <div class="skill__persentage">
+                    <div class="skill__persentagebar" style="width : 66%">
+                    </div>
+                </div>
+
+                <div class="skill__component">
+                    <div class="skill__name">
+                        <span>App</span>
+                    </div>
+                    <div class="skill__number">
+                        <span>40%</span>
+                    </div>
+                </div>
+                <div class="skill__persentage">
+                    <div class="skill__persentagebar" style="width : 42%">
+                    </div>
+                </div>
+            </div>
+            <div class="skill__description">
+                <div class="front__description">
+                    <ul>
+                        <h3>주로 사용하는 언어 및 마크업</h3>
+                        <li>- Html</li>
+                        <li>- Css</li>
+                        <li>- JavaScript</li>
+                        <h3>공부하고 있는 것들</h3>
+                        <li>- React Hook( styled-components , react-router , axios)</li>
+                        <li>- Redux</li>
+                    </ul>
+                </div>
+                <div class="back__description">
+                    <ul>
+                        <h3>관심있는 Backend</h3>
+                        <li>- Java</li>
+                        <li>- mySql</li>
+                        <li>- mongoDB</li>
+                    </ul>
+                </div>
+                <div class="App__description">
+                    <ul>
+                        <h3>관심있는 App</h3>
+                        <li>- AndroidStudio</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill__select">
+            <div class="frontend">
+                <i class="fas fa-code" data-select=".front__description"></i>
+                <p>Front-Click</p>
+
+            </div>
+            <div class="backend">
+                <i class="fas fa-coins" data-select=".back__description"></i>
+                <p>Back-Click</p>
+
+            </div>
+            <div class="server">
+                <i class="fas fa-cloud" data-select=".App__description"></i>
+                <p>&nbsp;App-Click</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Project -->
+
+    <div id="project">
+
+        <div class="project__title">Project</div>
+        <div class="project__container">
+            <a href="https://github.com/ymwho/2020.09.30">
+                <div class="project__component">
+                    <img src="/image/movieApp.png" alt="React : MovieApp">
+                    <div class="poject__description">React : MovieApp</div>
+                </div>
+            </a>
+
+            <a href="https://github.com/ymwho/2020.07.25">
+                <div class="project__component">
+                    <img src="/image/signitureClone.png" alt="Html : SignitureBed Clone">
+                    <div class="poject__description">Html : SignitureBed Clone</div>
+                </div>
+            </a>
+
+            <a href="https://github.com/ymwho/2020.10.05">
+                <div class="project__component">
+                    <img src="/image/movieApp2.png" alt="React : MovieApp2" />
+                    <div class="poject__description">React : MovieApp2</div>
+                </div>
+            </a>
+
+
+            <a href="https://github.com/ymwho/TeamProject">
+                <div class="project__component">
+                    <img src="/image/teamProject.png" alt="TeamProject">
+                    <div class="poject__description">Html : TeamProject</div>
+                </div>
+            </a>
+
+            <a href="https://github.com/ymwho/2020-09.15">
+                <div class="project__component">
+                    <img src="/image/Moment.png" alt="Momentum">
+                    <div class="poject__description">Html : Momentum</div>
+                </div>
+            </a>
+            <a href="https://github.com/ymwho/2020.10.03">
+                <div class="project__component">
+                    <img src="/image/todo.png" alt="React:TodoList">
+                    <div class="poject__description">React:TodoList</div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+
+    <!-- Contact-->
+
+
+    <div id="contact">
+
+        <div class="contact__title">
+            <h2>Contact</h2>
+        </div>
+
+        <div class="contact__description">
+            <div class="tel">PhoneNumber : 010 - 4233 - 7442</div>
+            <div class="mail">
+                <p>Email : parametertree@gmail.com</p>
+                <a href="mailto:parametertree@gmail.com">Click Me!</a>
+            </div>
         </div>
 
 
 
-
     </div>
+
+
+
+
+
+
+
 
 </body>
 
