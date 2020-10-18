@@ -347,15 +347,26 @@ h2 {
 }
 
 .contact__description {
-    padding-top: 50px;
+    padding-top: 30px;
     color: rgb(241, 237, 237);
 
 }
 
+.contact__description h2,
+.contact__description h2 a{
+    color:white;
+    font-size:15px;
+
+}
+
+
 .tel {
     font-size: 14px;
     color: rgb(194, 194, 194);
+    padding:10px 0px;
 }
+
+
 
 .mail {
     display: flex;
