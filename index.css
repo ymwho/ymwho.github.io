@@ -137,6 +137,7 @@ h2 {
 .about__img {
     text-align: right;
     padding-top: 50px;
+    visibility: hidden;
 }
 
 .about__description h2 {
@@ -385,6 +386,13 @@ h2 {
     display: block;
     animation: fade 300ms ease-in-out;
 }
+
+.aboutShow{
+    visibility: visible;
+    animation: fade 400ms ease-in-out;
+}
+
+
 
 
 /* KeyFrame */
